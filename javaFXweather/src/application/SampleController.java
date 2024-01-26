@@ -74,7 +74,7 @@ public class SampleController {
 		    public String toString() {
 		        return String.format(
 		            "Current Conditions in %s:\n" +
-		            "- Temperature: %.1f°C (Feels like: %.1f°C)\n" +
+		            "- Temperature: %.1fÂ°C (Feels like: %.1fÂ°C)\n" +
 		            "- Humidity: %d%%\n" +
 		            "- Wind Speed: %.1f km/h\n" +
 		            "- Conditions: %s\n",
@@ -122,7 +122,7 @@ public class SampleController {
 	             for (WeatherData data : allWeatherData) {
 	                 allDataText.append(data.toString()).append("\n");
 	             }
-	              // Use setText to replace existing content
+	        
 	         });
 	     } catch (Exception e) {
 	         e.printStackTrace();
