@@ -126,6 +126,16 @@ public class SampleController {
 	         });
 	     } catch (Exception e) {
 	         e.printStackTrace();
+		   
+
+	        	    // Tworzenie okienka dialogowego z błędem
+	        	    Alert alert = new Alert(Alert.AlertType.ERROR);
+	        	    alert.setTitle("Błąd");
+	        	    alert.setHeaderText("Błąd podczas ładowania danych");
+	        	    alert.setContentText("Nie udało się pozyskać danych z Internetu.");
+
+	        	    // Wyświetlenie okienka
+	        	    alert.showAndWait();
 	     }
 	 }
 	 private void deleteWeatherData() {
