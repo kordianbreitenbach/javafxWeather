@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<WeatherDataList>
+    <WeatherData>
+        <day>2024-01-30</day>
+        <city>Szczecin</city>
+        <temperature>4.2</temperature>
+        <humidity>79</humidity>
+        <windSpeed>10.1</windSpeed>
+        <conditions>Overcast</conditions>
+    </WeatherData>
+    <WeatherData>
+        <day>2024-01-31</day>
+        <city>Warsaw</city>
+        <temperature>5.3</temperature>
+        <humidity>75</humidity>
+        <windSpeed>12.5</windSpeed>
+        <conditions>Partly Cloudy</conditions>
+    </WeatherData>
+    <!-- More WeatherData entries can follow -->
+</WeatherDataList>

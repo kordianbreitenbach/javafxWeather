@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <left>
+      <Button id="enterCityName" fx:id="enterCityName" mnemonicParsing="false" prefHeight="288.0" prefWidth="44.0" text="enter" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Button fx:id="deleteButton" mnemonicParsing="false" prefHeight="286.0" prefWidth="49.0" text="delete" BorderPane.alignment="CENTER" />
+   </right>
+   <top>
+      <TextField id="cityName" fx:id="cityName" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <TableView fx:id="weatherTable" prefHeight="288.0" prefWidth="475.0" BorderPane.alignment="CENTER">
+        <columns>
+            <TableColumn fx:id="dayColumn" prefWidth="75.0" text="dzień" />
+          <TableColumn fx:id="cityColumn" prefWidth="75.0" text="miasto" />
+          <TableColumn fx:id="temperatureColumn" prefWidth="75.0" text="temperatura" />
+            <TableColumn fx:id="humidityColumn" prefWidth="173.0" text="wilgotnosc(w procentach)" />
+            <TableColumn fx:id="windSpeedColumn" minWidth="2.0" prefWidth="64.0" text="wiatr" />
+            <TableColumn fx:id="conditionsColumn" prefWidth="87.0" text="kondycja" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>
